@@ -1,0 +1,285 @@
+EXECUTION OF A PYTHON PROGRAM - NOTES
+
+1. Source Code
+
+Example:
+
+print("Hello")
+
+This code is called source code.
+
+It is simply text written by the programmer.
+
+The CPU cannot understand Python code directly.
+
+The CPU only understands machine instructions (binary).
+
+--------------------------------------------------
+
+2. Running a Python Program
+
+Suppose we have:
+
+hello.py
+
+and run:
+
+python hello.py
+
+This starts the Python interpreter.
+
+--------------------------------------------------
+
+3. Python Interpreter
+
+The Python Interpreter acts as a translator.
+
+Flow:
+
+Python Code
+↓
+Python Interpreter
+↓
+Instructions Computer Understands
+
+Without the interpreter, Python code cannot be executed.
+
+--------------------------------------------------
+
+4. Step-by-Step Execution Flow
+
+hello.py
+↓
+python hello.py
+↓
+Operating System starts python.exe
+↓
+Python reads the file
+↓
+Tokenization
+↓
+Parsing
+↓
+Syntax Checking
+↓
+Bytecode Generation
+↓
+Python Virtual Machine (PVM)
+↓
+Execute Instructions
+↓
+stdout
+↓
+Terminal
+↓
+Screen
+
+--------------------------------------------------
+
+5. File Loading
+
+Python opens the file and loads its contents into memory.
+
+Example:
+
+print("Hello")
+
+Python now begins processing the code.
+
+--------------------------------------------------
+
+6. Tokenization (Lexical Analysis)
+
+Python breaks code into smaller pieces called tokens.
+
+Example:
+
+print("Hello")
+
+Tokens:
+
+- print
+- (
+- "Hello"
+- )
+
+Python identifies:
+- Function names
+- Parentheses
+- Strings
+- Operators
+- Keywords
+
+--------------------------------------------------
+
+7. Parsing
+
+Python checks whether the code follows Python grammar rules.
+
+Example:
+
+print("Hello")
+
+Correct syntax:
+Program continues.
+
+Incorrect syntax:
+SyntaxError occurs.
+
+Execution stops.
+
+--------------------------------------------------
+
+8. Syntax Checking
+
+Syntax means the grammar rules of Python.
+
+Example:
+
+Correct:
+
+print("Hello")
+
+Wrong:
+
+print("Hello"
+
+Result:
+
+SyntaxError
+
+No execution occurs.
+
+--------------------------------------------------
+
+9. Bytecode Generation
+
+If syntax is correct:
+
+Python converts source code into bytecode.
+
+Flow:
+
+Source Code
+↓
+Bytecode
+↓
+Execution
+
+Bytecode is an intermediate representation used internally by Python.
+
+--------------------------------------------------
+
+10. Python Virtual Machine (PVM)
+
+The Python Virtual Machine executes bytecode.
+
+Flow:
+
+Bytecode
+↓
+Python Virtual Machine
+↓
+Execution
+
+The PVM acts like a small virtual computer inside Python.
+
+--------------------------------------------------
+
+11. Executing print()
+
+Example:
+
+print("Hello")
+
+Python performs:
+
+1. Locate print()
+2. Evaluate argument
+3. Create string object
+4. Call print function
+
+--------------------------------------------------
+
+12. stdout (Standard Output)
+
+Python does not directly display text on the screen.
+
+Flow:
+
+print()
+↓
+stdout
+↓
+Terminal
+↓
+Screen
+
+stdout is a communication channel used to send output.
+
+--------------------------------------------------
+
+13. Terminal Output
+
+Terminal receives:
+
+Hello
+
+and displays:
+
+Hello
+
+on the screen.
+
+--------------------------------------------------
+
+14. Program Termination
+
+After all instructions execute:
+
+- Memory is cleaned
+- Program exits
+- Control returns to terminal
+
+--------------------------------------------------
+
+15. Important Keywords
+
+Source Code
+Interpreter
+Tokenization
+Parsing
+Syntax
+SyntaxError
+Bytecode
+Python Virtual Machine (PVM)
+stdout
+Terminal
+
+--------------------------------------------------
+
+16. Key Learning
+
+A Python program does not run directly on the CPU.
+
+The execution process is:
+
+Source Code
+↓
+Interpreter
+↓
+Tokenization
+↓
+Parsing
+↓
+Syntax Checking
+↓
+Bytecode
+↓
+PVM
+↓
+stdout
+↓
+Terminal
+↓
+Output
