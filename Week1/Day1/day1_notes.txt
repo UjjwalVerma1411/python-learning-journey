@@ -1,0 +1,170 @@
+DAY 1 NOTES - PYTHON FUNDAMENTALS
+
+1. Coding vs Programming
+- Coding means writing instructions in a programming language.
+- Programming is the complete process of solving a problem using software.
+- Coding is a subset of programming.
+
+2. What is Programming?
+Programming is giving a computer a sequence of instructions to solve a problem.
+
+3. IDE (Integrated Development Environment)
+An IDE combines:
+- Code Editor
+- Terminal
+- Debugger
+- File Explorer
+
+Examples:
+- IDLE
+- Thonny
+- PyCharm
+- VS Code
+
+4. Text Editor
+A text editor is used to write and edit code.
+
+Examples:
+- VS Code
+- Notepad++
+- Sublime Text
+- Vim
+
+5. PATH
+PATH is a system variable that tells Windows where programs are installed.
+
+Benefit:
+Commands like:
+python
+pip
+
+can run from any terminal location.
+
+6. Terminal
+The terminal allows communication with the operating system through commands.
+
+Useful Commands:
+dir      -> Show files
+cd       -> Change directory
+cd ..    -> Go back one folder
+cls      -> Clear screen
+
+7. Python Terminal Commands
+
+Check Python Version:
+python --version
+py --version
+
+Enter Python Prompt:
+python
+
+Exit Python Prompt:
+exit()
+quit()
+
+8. Python Prompt vs Python File
+
+Python Prompt:
+- Temporary
+- One command at a time
+- Used for testing
+
+Python File:
+- Saved permanently
+- Contains complete programs
+- Used for development
+
+9. Argument
+An argument is a value passed to a function.
+
+Example:
+print("Hello")
+
+"Hello" is the argument.
+
+10. Statement
+A statement is a complete instruction given to Python.
+
+Examples:
+print("Hello")
+x = 10
+
+11. Expression
+An expression produces a value.
+
+Examples:
+5 + 3
+10
+"Hello"
+
+12. print() Function
+print() is a built-in Python function used to display output on the screen.
+
+Example:
+print("Hello World")
+
+13. Multiple Arguments
+
+Example:
+print("Name:", "Ujjwal")
+
+Python can print multiple values in one statement.
+
+14. end Parameter
+
+Example:
+print("Hello", end=" ")
+print("World")
+
+Output:
+Hello World
+
+15. Traceback
+A traceback is Python's error report.
+
+It tells:
+- Where the error occurred
+- What error occurred
+
+Example:
+print(10/0)
+
+Error:
+ZeroDivisionError
+
+16. Common Print Errors
+- Wrong spelling of print
+- Missing brackets
+- Missing quotes
+- Undefined names
+
+17. Comments
+
+Single Line Comment:
+# This is a comment
+
+Python ignores comments during execution.
+
+18. Multi-Line Comments
+
+Example:
+
+'''
+This is a multi-line comment
+'''
+
+Technically these are multi-line strings, often used as comments.
+
+19. Docstrings
+Triple quotes are used to document functions and classes.
+
+20. Key Learning of Day 1
+- Programming Basics
+- IDE and Terminal
+- PATH
+- Python Prompt
+- Statements
+- Expressions
+- print()
+- Comments
+- Basic Error Understanding
