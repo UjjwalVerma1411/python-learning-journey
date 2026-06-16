@@ -1,0 +1,209 @@
+IDENTIFIERS IN PYTHON
+
+1. What is an Identifier?
+
+An identifier is a name given to a programming element.
+
+Examples:
+
+- Variable Names
+- Function Names
+- Class Names
+- Module Names
+
+Identifiers help us identify and access different parts of a program.
+
+--------------------------------------------------
+
+2. Example
+
+age = 10
+
+Here:
+
+age → Identifier
+10 → Value/Object
+
+The identifier "age" is used to identify the value stored in memory.
+
+--------------------------------------------------
+
+3. Why Are They Called Identifiers?
+
+They are called identifiers because they identify something.
+
+Examples:
+
+student_name
+calculate_sum
+Person
+math_module
+
+Each name identifies a different object in the program.
+
+--------------------------------------------------
+
+4. Variables as Identifiers
+
+Example:
+
+name = "Ujjwal"
+
+Identifier:
+
+name
+
+Value:
+
+"Ujjwal"
+
+The identifier helps us access the value later.
+
+--------------------------------------------------
+
+5. Rules for Identifiers
+
+Identifiers follow the same rules as variable names.
+
+Valid Identifiers:
+
+name
+_age
+student2
+first_name
+namë
+
+Invalid Identifiers:
+
+2name
+first name
+user-name
+class
+price$
+
+--------------------------------------------------
+
+6. Valid Identifier Rules
+
+An identifier:
+
+- Can start with a letter
+- Can start with an underscore (_)
+- Can contain letters
+- Can contain digits
+- Can contain Unicode characters
+- Is case-sensitive
+
+Examples:
+
+name
+student2
+_first_name
+
+--------------------------------------------------
+
+7. Invalid Identifier Rules
+
+An identifier cannot:
+
+- Start with a digit
+- Contain spaces
+- Contain special characters
+- Be a Python keyword
+
+Examples:
+
+2name
+first name
+user-name
+class
+
+--------------------------------------------------
+
+8. Case Sensitivity
+
+Python is case-sensitive.
+
+Example:
+
+name
+Name
+NAME
+
+These are three different identifiers.
+
+--------------------------------------------------
+
+9. Good Naming Practices
+
+Use meaningful names.
+
+Good:
+
+student_name
+age
+total_marks
+favorite_color
+
+Bad:
+
+a
+x
+temp1
+
+Choose names that clearly describe the purpose of the variable.
+
+--------------------------------------------------
+
+10. Examples of Identifiers
+
+Variable:
+
+age = 20
+
+Identifier:
+
+age
+
+----------------
+
+Function:
+
+def greet():
+    pass
+
+Identifier:
+
+greet
+
+----------------
+
+Class:
+
+class Student:
+    pass
+
+Identifier:
+
+Student
+
+----------------
+
+Module:
+
+import math
+
+Identifier:
+
+math
+
+--------------------------------------------------
+
+11. Key Learnings
+
+- An identifier is a name used to identify programming elements.
+- Variables, functions, classes, and modules all use identifiers.
+- Identifier rules are the same as variable naming rules.
+- Identifiers must follow Python naming conventions.
+- Python identifiers are case-sensitive.
+- Meaningful identifiers improve code readability and maintainability.
