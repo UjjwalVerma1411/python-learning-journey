@@ -1,0 +1,274 @@
+INTEGER (int) IN PYTHON
+
+1. What is an Integer?
+
+An integer (int) is a whole number that can be positive, negative, or zero and does not contain a decimal point. :contentReference[oaicite:0]{index=0}
+
+Examples:
+
+10
+25
+1000
+0
+-5
+-100
+
+--------------------------------------------------
+
+2. Integer Objects
+
+Example:
+
+x = 10
+
+Visual:
+
+x ---> 10
+
+The object 10 exists in memory as an integer object.
+
+The variable x refers to that object.
+
+The object has the type int, not the variable. :contentReference[oaicite:1]{index=1}
+
+--------------------------------------------------
+
+3. Why Does Python Need Integers?
+
+Example:
+
+10 + 20
+
+Python sees:
+
+int + int
+
+Since both operands are integers, Python performs integer arithmetic.
+
+Result:
+
+30
+
+Integers allow Python to perform mathematical operations efficiently. :contentReference[oaicite:2]{index=2}
+
+--------------------------------------------------
+
+4. Integer Size in Python
+
+Unlike many programming languages, Python integers have no fixed size limit.
+
+The only practical limit is the available memory of the computer. :contentReference[oaicite:3]{index=3}
+
+--------------------------------------------------
+
+5. Integers are Immutable
+
+Integers cannot be modified after creation.
+
+Example:
+
+x = 10
+x = 20
+
+Incorrect Thinking:
+
+10 changed into 20
+
+Wrong.
+
+What actually happens:
+
+Before:
+
+x ---> 10
+
+After:
+
+x ---> 20
+
+The variable starts referring to a different integer object.
+
+The integer object 10 never changed. :contentReference[oaicite:4]{index=4}
+
+--------------------------------------------------
+
+6. Operations on Integers
+
+Common operations:
+
+Addition:
+10 + 5
+
+Subtraction:
+10 - 5
+
+Multiplication:
+10 * 5
+
+Division:
+10 / 5
+
+Floor Division:
+10 // 3
+
+Modulus:
+10 % 3
+
+Exponentiation:
+2 ** 3
+
+--------------------------------------------------
+
+7. Result Becomes Float
+
+Example:
+
+10 / 2
+
+Output:
+
+5.0
+
+Even though both values are integers, normal division produces a float result in Python. :contentReference[oaicite:5]{index=5}
+
+--------------------------------------------------
+
+8. Floor Division
+
+Example:
+
+10 // 3
+
+Output:
+
+3
+
+Floor division rounds the result down to the nearest integer (toward negative infinity). :contentReference[oaicite:6]{index=6}
+
+--------------------------------------------------
+
+9. int + float
+
+Example:
+
+1 + 1.1
+
+Python sees:
+
+int + float
+
+Both are numeric types.
+
+Python automatically converts the integer into a float.
+
+Conceptually:
+
+1.0 + 1.1
+
+Result:
+
+2.1
+
+This automatic conversion is called implicit type conversion (coercion). :contentReference[oaicite:7]{index=7}
+
+--------------------------------------------------
+
+10. int + str
+
+Example:
+
+1 + "Hello"
+
+Python sees:
+
+int + str
+
+Now Python does not know what addition should mean.
+
+Should it produce:
+
+1Hello
+Hello1
+
+There is no universally correct answer.
+
+Result:
+
+TypeError
+
+Python refuses to perform the operation. :contentReference[oaicite:8]{index=8}
+
+--------------------------------------------------
+
+11. Why Strings Can Use +
+
+Example:
+
+"Hello" + "World"
+
+Output:
+
+HelloWorld
+
+For strings, + means concatenation.
+
+For numbers, + means arithmetic addition.
+
+For int + str, Python has no defined meaning. :contentReference[oaicite:9]{index=9}
+
+--------------------------------------------------
+
+12. Type Conversion
+
+To make int and str work together, we can convert types.
+
+Examples:
+
+str(1) + "Hello"
+
+Output:
+
+1Hello
+
+Example:
+
+1 + int("5")
+
+Output:
+
+6
+
+--------------------------------------------------
+
+13. Implicit and Explicit Conversion
+
+Implicit Conversion:
+
+Python performs conversion automatically.
+
+Example:
+
+1 + 1.1
+
+Explicit Conversion:
+
+Programmer performs conversion manually.
+
+Examples:
+
+int("5")
+str(10)
+float(20)
+
+--------------------------------------------------
+
+14. Key Learnings
+
+- Integers are whole numbers.
+- Integers do not contain decimal points.
+- Integer objects are immutable.
+- Variables refer to integer objects.
+- Python supports very large integers.
+- int + float works because both are numeric types.
+- int + str causes TypeError.
+- Type conversion helps combine different data types.

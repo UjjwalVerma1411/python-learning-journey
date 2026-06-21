@@ -1,0 +1,371 @@
+DAY 3 - DATA TYPES IN PYTHON
+
+1. What is a Data Type?
+
+A data type tells Python what kind of value an object contains and what operations can be performed on it.
+
+Example:
+
+age = 20
+
+Visual:
+
+age ---> 20 (int)
+
+The object has the type, not the variable. :contentReference[oaicite:0]{index=0}
+
+--------------------------------------------------
+
+2. Why Do We Need Data Types?
+
+Data types help Python:
+
+- Store values correctly
+- Perform valid operations
+- Manage memory efficiently
+- Detect invalid operations
+
+Example:
+
+10 + 20
+
+Python knows both values are integers.
+
+Result:
+
+30
+
+--------------------------------------------------
+
+3. Categories of Data Types
+
+Python provides many built-in data types.
+
+Major categories:
+
+1. Numeric Types
+2. Boolean Type
+3. Text Type
+4. Sequence Types
+5. Mapping Type
+6. Set Types
+7. Bytes Types
+8. Special Types
+
+:contentReference[oaicite:1]{index=1}
+
+--------------------------------------------------
+
+4. Numeric Types
+
+Used for numbers.
+
+Includes:
+
+- int
+- float
+- complex
+
+Examples:
+
+10
+3.14
+2 + 3j
+
+--------------------------------------------------
+
+5. Boolean Type
+
+Used for logical values.
+
+Possible values:
+
+True
+False
+
+Example:
+
+is_student = True
+
+:contentReference[oaicite:2]{index=2}
+
+--------------------------------------------------
+
+6. Text Type
+
+Python uses:
+
+str
+
+to represent text.
+
+Examples:
+
+"Hello"
+"Python"
+"Ujjwal"
+
+:contentReference[oaicite:3]{index=3}
+
+--------------------------------------------------
+
+7. Sequence Types
+
+Sequence types store ordered collections of items.
+
+Examples:
+
+list
+tuple
+range
+
+Examples:
+
+[1, 2, 3]
+(1, 2, 3)
+range(5)
+
+:contentReference[oaicite:4]{index=4}
+
+--------------------------------------------------
+
+8. Mapping Type
+
+Python provides:
+
+dict
+
+for storing key-value pairs.
+
+Example:
+
+student = {
+    "name": "Ujjwal",
+    "age": 19
+}
+
+:contentReference[oaicite:5]{index=5}
+
+--------------------------------------------------
+
+9. Set Types
+
+Used to store unique values.
+
+Examples:
+
+set
+frozenset
+
+Example:
+
+{1, 2, 3}
+
+:contentReference[oaicite:6]{index=6}
+
+--------------------------------------------------
+
+10. Bytes Types
+
+Used for binary data.
+
+Examples:
+
+bytes
+bytearray
+memoryview
+
+These are commonly used when working with files, networking, and low-level operations.
+
+:contentReference[oaicite:7]{index=7}
+
+--------------------------------------------------
+
+11. Special Type
+
+Python provides:
+
+NoneType
+
+Value:
+
+None
+
+Represents the absence of a value.
+
+Example:
+
+x = None
+
+:contentReference[oaicite:8]{index=8}
+
+--------------------------------------------------
+
+12. Fundamental Data Types
+
+The most important beginner-level data types are:
+
+1. int
+2. float
+3. str
+4. bool
+
+These are called fundamental data types.
+
+:contentReference[oaicite:9]{index=9}
+
+--------------------------------------------------
+
+13. Mutable vs Immutable
+
+Important Question:
+
+Can the object be changed after it is created?
+
+If YES:
+
+Mutable
+
+If NO:
+
+Immutable
+
+:contentReference[oaicite:10]{index=10}
+
+--------------------------------------------------
+
+14. Immutable Data Types
+
+Immutable objects cannot be changed after creation.
+
+Examples:
+
+int
+float
+bool
+str
+tuple
+frozenset
+bytes
+NoneType
+
+:contentReference[oaicite:11]{index=11}
+
+--------------------------------------------------
+
+15. Mutable Data Types
+
+Mutable objects can be modified after creation.
+
+Examples:
+
+list
+dict
+set
+bytearray
+
+:contentReference[oaicite:12]{index=12}
+
+--------------------------------------------------
+
+16. Example of Mutable Object
+
+numbers = [1, 2, 3]
+
+numbers.append(4)
+
+Result:
+
+[1, 2, 3, 4]
+
+The same list object was modified.
+
+:contentReference[oaicite:13]{index=13}
+
+--------------------------------------------------
+
+17. Example of Immutable Object
+
+x = 10
+
+x = 20
+
+Many beginners think:
+
+10 changed into 20
+
+Wrong.
+
+What actually happened:
+
+Before:
+
+x ---> 10
+
+After:
+
+x ---> 20
+
+The variable started referring to another object.
+
+The integer object itself never changed.
+
+:contentReference[oaicite:14]{index=14}
+
+--------------------------------------------------
+
+18. Important Thought Process
+
+Variables do not contain types.
+
+Objects contain types.
+
+Incorrect Thinking:
+
+x is an int variable
+
+Correct Thinking:
+
+x is a variable
+10 is an int object
+
+This idea is very important in Python.
+
+:contentReference[oaicite:15]{index=15}
+
+--------------------------------------------------
+
+19. Mutable vs Immutable Summary
+
+Immutable:
+
+- int
+- float
+- bool
+- str
+- tuple
+- frozenset
+- bytes
+- NoneType
+
+Mutable:
+
+- list
+- dict
+- set
+- bytearray
+
+:contentReference[oaicite:16]{index=16}
+
+--------------------------------------------------
+
+20. Key Learnings
+
+- Data types describe the kind of value stored in an object.
+- Objects have types, variables do not.
+- Python provides many built-in data types.
+- The fundamental data types are int, float, str, and bool.
+- Objects are classified as mutable or immutable.
+- Immutable objects cannot be modified.
+- Mutable objects can be modified after creation.
+- Understanding mutability is essential for mastering Python.
