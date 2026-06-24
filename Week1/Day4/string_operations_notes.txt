@@ -1,0 +1,344 @@
+STRING OPERATIONS IN PYTHON
+
+1. What are String Operations?
+
+String operations are actions that can be performed on strings.
+
+Common string operations:
+
+- Concatenation
+- Repetition
+- Membership Testing
+
+These operations help manipulate and work with text data.
+
+--------------------------------------------------
+
+2. Concatenation
+
+Concatenation means joining two or more strings together.
+
+Syntax:
+
+str + str
+
+Example:
+
+first_name = "Ujjwal"
+last_name = "Verma"
+
+full_name = first_name + last_name
+
+Output:
+
+UjjwalVerma
+
+Only strings can be concatenated directly.
+
+--------------------------------------------------
+
+3. Space is NOT Added Automatically
+
+Example:
+
+first = "Hello"
+second = "World"
+
+print(first + second)
+
+Output:
+
+HelloWorld
+
+Python does not automatically add spaces.
+
+To add a space:
+
+print(first + " " + second)
+
+Output:
+
+Hello World
+
+--------------------------------------------------
+
+4. Concatenation Rules
+
+Valid:
+
+"Hello" + "World"
+
+Result:
+
+HelloWorld
+
+Invalid:
+
+"Hello" + 10
+
+Result:
+
+TypeError
+
+Reason:
+
+Python does not know how to join a string and an integer directly.
+
+Use type conversion:
+
+"Hello" + str(10)
+
+Output:
+
+Hello10
+
+--------------------------------------------------
+
+5. Repetition
+
+Repetition means creating multiple copies of a string.
+
+Syntax:
+
+string * integer
+
+Example:
+
+"Python" * 3
+
+Output:
+
+PythonPythonPython
+
+Python repeats the string the specified number of times.
+
+--------------------------------------------------
+
+6. Examples of Repetition
+
+Example:
+
+print("*" * 10)
+
+Output:
+
+**********
+
+----------------
+
+Example:
+
+print("Hi " * 4)
+
+Output:
+
+Hi Hi Hi Hi
+
+--------------------------------------------------
+
+7. Repetition Rules
+
+Valid:
+
+"Python" * 5
+
+Invalid:
+
+"Python" * 2.5
+
+Result:
+
+TypeError
+
+Reason:
+
+The repetition count must be an integer.
+
+--------------------------------------------------
+
+8. Membership Operators
+
+Membership operators check whether a value exists inside another object.
+
+For strings:
+
+They check whether a character or substring exists inside a string. :contentReference[oaicite:0]{index=0}
+
+--------------------------------------------------
+
+9. The 'in' Operator
+
+Syntax:
+
+value in string
+
+Example:
+
+"Py" in "Python"
+
+Output:
+
+True
+
+Reason:
+
+"Py" exists inside "Python".
+
+--------------------------------------------------
+
+10. More Examples of 'in'
+
+Example:
+
+"thon" in "Python"
+
+Output:
+
+True
+
+----------------
+
+Example:
+
+"Java" in "Python"
+
+Output:
+
+False
+
+--------------------------------------------------
+
+11. Case Sensitivity
+
+Membership testing is case-sensitive.
+
+Example:
+
+"python" in "Python"
+
+Output:
+
+False
+
+Reason:
+
+P and p are different characters.
+
+:contentReference[oaicite:1]{index=1}
+
+--------------------------------------------------
+
+12. Order Sensitivity
+
+Example:
+
+"Py" in "Python"
+
+Output:
+
+True
+
+Example:
+
+"yP" in "Python"
+
+Output:
+
+False
+
+Order matters.
+
+:contentReference[oaicite:2]{index=2}
+
+--------------------------------------------------
+
+13. The 'not in' Operator
+
+Syntax:
+
+value not in string
+
+This is the opposite of 'in'.
+
+Example:
+
+"Java" not in "Python"
+
+Output:
+
+True
+
+Reason:
+
+Java does not exist inside Python.
+
+:contentReference[oaicite:3]{index=3}
+
+--------------------------------------------------
+
+14. More Examples of 'not in'
+
+Example:
+
+"Py" not in "Python"
+
+Output:
+
+False
+
+Reason:
+
+Py exists inside Python.
+
+--------------------------------------------------
+
+15. Practical Examples
+
+Example:
+
+email = "user@gmail.com"
+
+"@" in email
+
+Output:
+
+True
+
+----------------
+
+Example:
+
+password = "Python123"
+
+"123" in password
+
+Output:
+
+True
+
+Membership operators are often used in validation.
+
+--------------------------------------------------
+
+16. Important Points
+
+- Concatenation joins strings.
+- Repetition creates multiple copies of strings.
+- Python does not automatically add spaces.
+- Membership operators check for existence.
+- 'in' returns True if found.
+- 'not in' returns True if not found.
+- Membership checks are case-sensitive.
+- Membership checks are order-sensitive.
+
+--------------------------------------------------
+
+17. Key Learnings
+
+- String + String = Concatenation
+- String * Integer = Repetition
+- 'in' checks presence
+- 'not in' checks absence
+- Membership testing is case-sensitive
+- Membership testing is order-sensitive
+- String operations are fundamental in text processing
