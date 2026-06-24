@@ -1,0 +1,199 @@
+STRINGS IN PYTHON
+
+1. What is a Character?
+
+A character is a single symbol.
+
+Examples:
+
+A
+B
+1
+@
+#
+$
+
+Each of these is one character.
+
+--------------------------------------------------
+
+2. What is a String?
+
+A string is a sequence (collection) of characters used to represent text.
+
+Examples:
+
+"Python"
+"Ujjwal"
+"AI Engineer"
+
+Example:
+
+"Ujjwal"
+
+Contains:
+
+U
+j
+j
+w
+a
+l
+
+Strings are objects in Python. :contentReference[oaicite:0]{index=0}
+
+--------------------------------------------------
+
+3. Strings Can Contain
+
+Strings can contain:
+
+- Letters
+- Numbers
+- Symbols
+- Spaces
+- Special Characters
+
+Examples:
+
+"Python"
+"12345"
+"!@#$%"
+"Hello World"
+
+:contentReference[oaicite:1]{index=1}
+
+--------------------------------------------------
+
+4. Empty String
+
+A string may contain no characters.
+
+Example:
+
+""
+
+This is called an empty string.
+
+Example:
+
+print("")
+
+Output:
+
+(blank line)
+
+:contentReference[oaicite:2]{index=2}
+
+--------------------------------------------------
+
+5. How Does Python Know Something is a String?
+
+Python recognizes text because it is enclosed inside quotes.
+
+Example:
+
+name = "Ujjwal"
+
+Python understands:
+
+"Ujjwal"
+
+is text.
+
+Without quotes:
+
+name = Ujjwal
+
+Python searches for a variable named:
+
+Ujjwal
+
+If no such variable exists:
+
+NameError occurs.
+
+:contentReference[oaicite:3]{index=3}
+
+--------------------------------------------------
+
+6. Types of Quotes
+
+Python supports:
+
+1. Single Quotes
+
+'Hello'
+
+2. Double Quotes
+
+"Hello"
+
+3. Triple Quotes
+
+'''Hello'''
+
+or
+
+"""Hello"""
+
+All can create strings.
+
+:contentReference[oaicite:4]{index=4}
+
+--------------------------------------------------
+
+7. Using Quotes Inside Strings
+
+If a string uses double quotes outside:
+
+message = "I'm learning Python"
+
+If a string uses single quotes outside:
+
+message = 'He said "Hello"'
+
+This helps avoid errors.
+
+:contentReference[oaicite:5]{index=5}
+
+--------------------------------------------------
+
+8. Escape Character (\)
+
+Backslash allows special characters inside strings.
+
+Example:
+
+'I\'m learning Python'
+
+Output:
+
+I'm learning Python
+
+The backslash tells Python to treat the quote as normal text.
+
+:contentReference[oaicite:6]{index=6}
+
+--------------------------------------------------
+
+9. Important Points
+
+- Strings are sequences of characters.
+- Strings are objects.
+- Strings can contain letters, numbers, symbols, and spaces.
+- Strings can be empty.
+- Quotes tell Python that something is text.
+- Python supports single, double, and triple quotes.
+- Backslash is used for escaping special characters.
+
+--------------------------------------------------
+
+10. Key Learnings
+
+- Character = Single symbol
+- String = Collection of characters
+- Strings represent text
+- Quotes create strings
+- Strings are objects in Python
+- Escape characters help include quotes inside strings

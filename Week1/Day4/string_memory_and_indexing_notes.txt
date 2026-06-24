@@ -1,0 +1,397 @@
+STRING STORAGE, INDEXING AND SLICING
+
+1. String Storage in Memory
+
+Example:
+
+name = "Python"
+
+Step 1:
+Python sees:
+
+"Python"
+
+and creates a string object.
+
+Step 2:
+The string object is stored in memory.
+
+Step 3:
+The variable name is created.
+
+Step 4:
+The variable refers to the string object.
+
+Visual:
+
+name
+  |
+  v
+"Python"
+
+Variables refer to objects.
+Variables do not contain objects.
+
+--------------------------------------------------
+
+2. Multiple Variables Referencing Same String
+
+Example:
+
+x = "Python"
+y = x
+
+Incorrect Thinking:
+
+y -> x -> "Python"
+
+Wrong.
+
+Correct Model:
+
+x ----\
+       \
+        > "Python"
+       /
+y ----/
+
+Both variables directly refer to the same string object.
+
+--------------------------------------------------
+
+3. Reassignment
+
+Example:
+
+name = "Python"
+name = "Java"
+
+Incorrect Thinking:
+
+"Python" became "Java"
+
+Wrong.
+
+What actually happens:
+
+Before:
+
+name ---> "Python"
+
+After:
+
+name ---> "Java"
+
+The variable now refers to another string object.
+
+The old string object remains unchanged.
+
+Strings are immutable.
+
+--------------------------------------------------
+
+4. What is Inside a String?
+
+Example:
+
+"Python"
+
+Characters:
+
+P  y  t  h  o  n
+
+Strings store characters in order.
+
+Order is very important because indexing depends on it.
+
+--------------------------------------------------
+
+5. What is Indexing?
+
+Indexing is used to access a specific character from a string.
+
+Example:
+
+name = "Python"
+
+Each character has a position number.
+
+Character: P  y  t  h  o  n
+Index:     0  1  2  3  4  5
+
+Python uses Zero-Based Indexing.
+
+--------------------------------------------------
+
+6. Positive Indexing
+
+Example:
+
+name = "Python"
+
+Character: P  y  t  h  o  n
+Index:     0  1  2  3  4  5
+
+Examples:
+
+name[0] -> P
+name[1] -> y
+name[2] -> t
+name[5] -> n
+
+--------------------------------------------------
+
+7. Accessing Characters
+
+Example:
+
+name = "Python"
+
+print(name[3])
+
+Output:
+
+h
+
+Python:
+
+1. Goes to the string object
+2. Finds index 3
+3. Returns the character
+
+Index must be an integer.
+
+--------------------------------------------------
+
+8. Index Out of Range
+
+Example:
+
+name = "Python"
+
+print(name[6])
+
+Error:
+
+IndexError
+
+Reason:
+
+There is no character at index 6.
+
+--------------------------------------------------
+
+9. Single Character is Also a String
+
+Python does not have a separate character type.
+
+Example:
+
+name = "Python"
+
+name[0]
+
+Output:
+
+"P"
+
+Type:
+
+str
+
+A single character is still a string.
+
+--------------------------------------------------
+
+10. Negative Indexing
+
+Negative indexing starts from the end.
+
+Example:
+
+Character: P  y  t  h  o  n
+Positive : 0  1  2  3  4  5
+Negative : -6 -5 -4 -3 -2 -1
+
+Examples:
+
+name[-1] -> n
+name[-2] -> o
+name[-3] -> h
+
+Use negative indexing when working from the end of a string.
+
+--------------------------------------------------
+
+11. String Slicing
+
+Slicing extracts a portion of a string.
+
+Syntax:
+
+string[start:end]
+
+Example:
+
+name = "Python"
+
+name[0:3]
+
+Output:
+
+Pyt
+
+Start at index 0.
+Stop before index 3.
+
+End index is NOT included.
+
+--------------------------------------------------
+
+12. Omitting Start
+
+Example:
+
+name[:3]
+
+Output:
+
+Pyt
+
+Python starts from index 0 automatically.
+
+--------------------------------------------------
+
+13. Omitting End
+
+Example:
+
+name[2:]
+
+Output:
+
+thon
+
+Python continues until the end.
+
+--------------------------------------------------
+
+14. Number of Characters
+
+Formula:
+
+end - start
+
+Example:
+
+name[0:3]
+
+Characters:
+
+3 - 0 = 3
+
+Output:
+
+Pyt
+
+--------------------------------------------------
+
+15. Step Slicing
+
+Syntax:
+
+string[start:end:step]
+
+Step tells Python how many positions to move.
+
+Example:
+
+name = "Python"
+
+name[0:6:2]
+
+Output:
+
+Pto
+
+Python takes:
+
+P -> t -> o
+
+--------------------------------------------------
+
+16. Default Step
+
+Default step is:
+
+1
+
+Therefore:
+
+name[0:6]
+
+and
+
+name[0:6:1]
+
+mean the same thing.
+
+--------------------------------------------------
+
+17. Negative Step
+
+Example:
+
+name[::-1]
+
+Output:
+
+nohtyP
+
+Python:
+
+Starts from end
+Moves backward
+Creates a reversed string
+
+--------------------------------------------------
+
+18. String Reversal
+
+Example:
+
+name = "Python"
+
+name[::-1]
+
+Output:
+
+nohtyP
+
+This is a very common Python technique.
+
+--------------------------------------------------
+
+19. Important Points
+
+- Strings are immutable.
+- Variables refer to string objects.
+- Python uses zero-based indexing.
+- Positive indexing starts from left.
+- Negative indexing starts from right.
+- Slicing extracts parts of strings.
+- End index is not included.
+- Step controls movement.
+- Negative step moves backwards.
+- [::-1] reverses a string.
+
+--------------------------------------------------
+
+20. Key Learnings
+
+- Strings store ordered characters.
+- Indexing accesses individual characters.
+- Slicing extracts portions of strings.
+- Negative indexing accesses from the end.
+- Step slicing controls traversal.
+- String reversal is done using [::-1].

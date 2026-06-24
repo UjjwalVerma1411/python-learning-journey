@@ -1,0 +1,309 @@
+STRING COMPARISON IN PYTHON
+
+1. What is String Comparison?
+
+String comparison means checking relationships between strings.
+
+Python allows strings to be compared using comparison operators.
+
+Common comparison operators:
+
+==
+!=
+<
+>
+<=
+>=
+
+String comparison is performed character by character.
+
+:contentReference[oaicite:0]{index=0}
+
+--------------------------------------------------
+
+2. Equality Operator (==)
+
+The equality operator checks whether two strings contain exactly the same characters.
+
+Example:
+
+"Python" == "Python"
+
+Output:
+
+True
+
+Example:
+
+"Python" == "python"
+
+Output:
+
+False
+
+Reason:
+
+Python is case-sensitive.
+
+:contentReference[oaicite:1]{index=1}
+
+--------------------------------------------------
+
+3. Not Equal Operator (!=)
+
+Checks whether two strings are different.
+
+Example:
+
+"Python" != "Java"
+
+Output:
+
+True
+
+Example:
+
+"Python" != "Python"
+
+Output:
+
+False
+
+:contentReference[oaicite:2]{index=2}
+
+--------------------------------------------------
+
+4. Less Than (<) and Greater Than (>)
+
+Python compares strings similar to a dictionary.
+
+Comparison occurs:
+
+Character by character
+From left to right
+
+Python compares characters using their ASCII/Unicode values.
+
+:contentReference[oaicite:3]{index=3}
+
+--------------------------------------------------
+
+5. Example: "apple" and "banana"
+
+Example:
+
+"apple" < "banana"
+
+Comparison:
+
+a vs b
+
+Since:
+
+a comes before b
+
+Python immediately decides:
+
+"apple" < "banana"
+
+Result:
+
+True
+
+No need to check remaining characters.
+
+:contentReference[oaicite:4]{index=4}
+
+--------------------------------------------------
+
+6. Example: "car" and "cat"
+
+Comparison:
+
+c vs c -> same
+
+a vs a -> same
+
+r vs t
+
+Since:
+
+r comes before t
+
+Python decides:
+
+"car" < "cat"
+
+Result:
+
+True
+
+:contentReference[oaicite:5]{index=5}
+
+--------------------------------------------------
+
+7. Character-by-Character Comparison
+
+Python compares one character at a time.
+
+As soon as a difference is found:
+
+Python makes a decision.
+
+Remaining characters are ignored.
+
+This makes comparisons efficient.
+
+--------------------------------------------------
+
+8. Comparison of Numeric Strings
+
+Example:
+
+"100" < "20"
+
+Result:
+
+True
+
+Why?
+
+Python compares:
+
+1 vs 2
+
+Since:
+
+1 comes before 2
+
+Python decides:
+
+"100" < "20"
+
+Important:
+
+This is string comparison, NOT numeric comparison.
+
+:contentReference[oaicite:6]{index=6}
+
+--------------------------------------------------
+
+9. Uppercase vs Lowercase
+
+Example:
+
+"A" < "a"
+
+Result:
+
+True
+
+Reason:
+
+ASCII value of uppercase letters is smaller than lowercase letters.
+
+Python compares character codes internally.
+
+:contentReference[oaicite:7]{index=7}
+
+--------------------------------------------------
+
+10. ASCII Values
+
+Python uses character codes to compare characters.
+
+Examples:
+
+A -> 65
+B -> 66
+a -> 97
+b -> 98
+
+Therefore:
+
+"A" < "a"
+
+because:
+
+65 < 97
+
+--------------------------------------------------
+
+11. Less Than or Equal To (<=)
+
+Works exactly like <
+
+But also returns True when both strings are equal.
+
+Example:
+
+"Python" <= "Python"
+
+Output:
+
+True
+
+:contentReference[oaicite:8]{index=8}
+
+--------------------------------------------------
+
+12. Greater Than or Equal To (>=)
+
+Works exactly like >
+
+But also returns True when both strings are equal.
+
+Example:
+
+"Python" >= "Python"
+
+Output:
+
+True
+
+:contentReference[oaicite:9]{index=9}
+
+--------------------------------------------------
+
+13. Practical Examples
+
+Example:
+
+username = "admin"
+
+if username == "admin":
+    print("Access Granted")
+
+----------------
+
+Example:
+
+password = "Python123"
+
+if password != "python123":
+    print("Passwords are different")
+
+--------------------------------------------------
+
+14. Important Points
+
+- String comparison is character by character.
+- Comparison occurs from left to right.
+- Python uses ASCII/Unicode values.
+- Comparisons are case-sensitive.
+- Uppercase and lowercase characters are different.
+- Numeric strings are compared as text, not numbers.
+
+--------------------------------------------------
+
+15. Key Learnings
+
+- == checks equality.
+- != checks inequality.
+- < checks lexicographical order.
+- > checks lexicographical order.
+- <= includes equality.
+- >= includes equality.
+- Python compares strings like dictionary words.
+- ASCII values determine character ordering.
+- String comparison is case-sensitive.
