@@ -1,0 +1,232 @@
+STRING FUNCTIONS IN PYTHON
+
+1. What are String Functions?
+
+Python provides several built-in functions that work with strings.
+
+Some important functions are:
+
+- len()
+- ord()
+- chr()
+- min()
+- max()
+
+These functions help us analyze and manipulate strings. :contentReference[oaicite:0]{index=0}
+
+--------------------------------------------------
+
+2. len()
+
+Definition:
+
+len() returns the number of items in an object.
+
+For strings:
+
+It returns the total number of characters in the string. :contentReference[oaicite:1]{index=1}
+
+Syntax:
+
+len(string)
+
+Example:
+
+name = "Python"
+
+print(len(name))
+
+Output:
+
+6
+
+--------------------------------------------------
+
+3. Common Use of len()
+
+One common use is finding the last character.
+
+Example:
+
+name = "Python"
+
+last_character = name[len(name)-1]
+
+Output:
+
+n
+
+Reason:
+
+The last index is always:
+
+length - 1
+
+--------------------------------------------------
+
+4. ord()
+
+Definition:
+
+ord() returns the Unicode (integer) value of a character. :contentReference[oaicite:2]{index=2}
+
+Syntax:
+
+ord(character)
+
+Example:
+
+print(ord("A"))
+
+Output:
+
+65
+
+----------------
+
+Example:
+
+print(ord("a"))
+
+Output:
+
+97
+
+Important:
+
+ord() accepts only one character.
+
+Passing a string with multiple characters causes an error.
+
+--------------------------------------------------
+
+5. chr()
+
+Definition:
+
+chr() returns the character corresponding to a Unicode integer value. :contentReference[oaicite:3]{index=3}
+
+Syntax:
+
+chr(integer)
+
+Example:
+
+print(chr(65))
+
+Output:
+
+A
+
+----------------
+
+Example:
+
+print(chr(97))
+
+Output:
+
+a
+
+Relationship:
+
+ord() : Character → Number
+
+chr() : Number → Character
+
+--------------------------------------------------
+
+6. min()
+
+Definition:
+
+min() returns the smallest item from an iterable.
+
+For strings:
+
+It returns the character with the smallest Unicode value. :contentReference[oaicite:4]{index=4}
+
+Example:
+
+text = "Python"
+
+print(min(text))
+
+Output:
+
+P
+
+The comparison is based on Unicode values.
+
+--------------------------------------------------
+
+7. max()
+
+Definition:
+
+max() returns the largest item from an iterable.
+
+For strings:
+
+It returns the character with the largest Unicode value. :contentReference[oaicite:5]{index=5}
+
+Example:
+
+text = "Python"
+
+print(max(text))
+
+Output:
+
+y
+
+Comparison is based on Unicode values.
+
+--------------------------------------------------
+
+8. Unicode Comparison
+
+Examples:
+
+ord("A") = 65
+
+ord("a") = 97
+
+Since:
+
+97 > 65
+
+Therefore:
+
+max("Aa")
+
+returns:
+
+a
+
+--------------------------------------------------
+
+9. Summary Table
+
+Function        Purpose
+
+len()           Number of characters
+
+ord()           Character → Unicode value
+
+chr()           Unicode value → Character
+
+min()           Smallest character
+
+max()           Largest character
+
+--------------------------------------------------
+
+10. Key Learnings
+
+- len() counts characters.
+- ord() converts a character into its Unicode value.
+- chr() converts a Unicode value back into a character.
+- min() returns the smallest character in a string.
+- max() returns the largest character in a string.
+- Unicode values determine character ordering.

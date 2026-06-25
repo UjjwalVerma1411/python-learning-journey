@@ -1,0 +1,205 @@
+STRING IMMUTABILITY IN PYTHON
+
+1. What is Immutability?
+
+Immutable means:
+
+Once an object is created, its contents cannot be changed.
+
+Strings are immutable objects in Python.
+
+Once a string is created, it can never be modified. :contentReference[oaicite:0]{index=0}
+
+--------------------------------------------------
+
+2. Example of String Immutability
+
+Example:
+
+name = "Python"
+
+The string object:
+
+"Python"
+
+is created in memory.
+
+The variable:
+
+name
+
+refers to that string object.
+
+Visual:
+
+name
+  |
+  v
+"Python"
+
+--------------------------------------------------
+
+3. Reassignment Does NOT Modify a String
+
+Example:
+
+name = "Python"
+
+name = "Jython"
+
+Incorrect Thinking:
+
+"Python" became "Jython"
+
+Wrong.
+
+Correct Understanding:
+
+Initially:
+
+name ---> "Python"
+
+After reassignment:
+
+name ---> "Jython"
+
+The variable now refers to a new string object.
+
+The original string:
+
+"Python"
+
+still exists unchanged until Python removes it if nothing refers to it anymore. :contentReference[oaicite:1]{index=1}
+
+--------------------------------------------------
+
+4. Concatenation Does Not Modify the Original String
+
+Example:
+
+language = "Python"
+
+new_language = language + "World"
+
+Result:
+
+language ---> "Python"
+
+new_language ---> "PythonWorld"
+
+Python creates a completely new string object.
+
+The original string remains unchanged. :contentReference[oaicite:2]{index=2}
+
+--------------------------------------------------
+
+5. String Methods Also Return New Strings
+
+Example:
+
+name = "alan"
+
+upper_name = name.upper()
+
+Result:
+
+name -------> "alan"
+
+upper_name -> "ALAN"
+
+The original string is not modified.
+
+A new string object is created and returned. :contentReference[oaicite:3]{index=3}
+
+--------------------------------------------------
+
+6. Why Can't We Modify Strings?
+
+Because strings are immutable.
+
+Example:
+
+name = "Python"
+
+Trying to change:
+
+name[0] = "J"
+
+Results in:
+
+TypeError
+
+Reason:
+
+Individual characters of a string cannot be changed.
+
+--------------------------------------------------
+
+7. Why Did Python Make Strings Immutable?
+
+Python makes strings immutable for several important reasons:
+
+1. Safety
+
+Strings cannot be accidentally changed.
+
+2. Efficiency
+
+Python can safely reuse string objects in memory.
+
+3. Hashing
+
+Strings are commonly used as:
+
+- Dictionary keys
+- Set elements
+
+Their values must remain constant for dictionaries and sets to work correctly. :contentReference[oaicite:4]{index=4}
+
+--------------------------------------------------
+
+8. Mutable vs Immutable
+
+Immutable:
+
+- int
+- float
+- bool
+- str
+- tuple
+- frozenset
+- bytes
+- NoneType
+
+Mutable:
+
+- list
+- dict
+- set
+- bytearray
+
+Strings belong to the immutable category.
+
+--------------------------------------------------
+
+9. Important Points
+
+- Strings cannot be modified after creation.
+- Reassignment creates a new string object.
+- Concatenation creates a new string.
+- String methods return new strings.
+- Variables refer to string objects.
+- Objects remain unchanged.
+- Immutability improves safety and efficiency.
+
+--------------------------------------------------
+
+10. Key Learnings
+
+- Strings are immutable.
+- Variables refer to string objects.
+- Reassignment does not change existing strings.
+- Concatenation creates a new string object.
+- String methods create new strings.
+- String immutability allows Python to optimize memory usage.
+- Immutability makes dictionary keys and set elements reliable.
